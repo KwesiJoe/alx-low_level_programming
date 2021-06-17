@@ -1,7 +1,7 @@
 #include  <stdio.h>
 
 /**
- * This used the puts builtin function to print line to standard output
+ *main - This uses the puts builtin function to print line to standard output
  */
 int main(void)
 {
