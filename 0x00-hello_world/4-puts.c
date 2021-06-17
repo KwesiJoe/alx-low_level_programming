@@ -2,6 +2,8 @@
 
 /**
  *main - This uses the puts builtin function to print line to standard output
+ *
+ * Return: 0
  */
 int main(void)
 {
