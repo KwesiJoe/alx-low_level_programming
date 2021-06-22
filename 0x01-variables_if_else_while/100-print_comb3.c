@@ -13,30 +13,21 @@
  */
 int main(void)
 {
-	int i, j, k;
+	int i = '0';
+	int j = '1';
 
-	i = 0;
-
-	while (i < 100)
+	while (i <= '9')
 	{
-		j = i % 10; /* singles digit */
-		k = i / 10; /* doubles digit */
-
-		if (k < j)
+		while (j <= '9')
 		{
-			putchar(k + '0');
-			putchar(j + '0');
-
-			if (i < 89)
-			{
-				putchar(44);
-				putchar(32);
-			}
+			putchar(i);
+			putchar(j);
+			putchar(' ');
+			j = j + 1;
 		}
-
-		i++;
+		i = i + 1;
+		j = i + 1;
 	}
 	putchar('\n');
-
 	return (0);
 }
