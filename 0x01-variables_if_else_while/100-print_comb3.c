@@ -25,8 +25,8 @@ int main(void)
 			if (i != '8' || j != '9')
 			{
 				putchar(',');
+				putchar(' ');
 			}
-			putchar(' ');
 			j = j + 1;
 		}
 		i = i + 1;
