@@ -9,5 +9,6 @@ Files contained herein are:
 
 ## Projects 
 Each directory represents a different project:
-|Item No.| Project Name | Description |
-|--------------|--------------|-------------|
+| Project| Description |
+|--------------|-------------|
+|  |  |
