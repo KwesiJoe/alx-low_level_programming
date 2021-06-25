@@ -4,7 +4,7 @@ Module of **Low-level programming** carried out during **Full Stack Software Eng
 ## Technologies
 Files contained herein are:
 * Bash scripts
-* C source code files written according to the C89 standard
+* C source code files written according to the gnu89 standard
 * **[Betty-style coding](https://github.com/holbertonschool/Betty/wiki)** was used for all C programs
 
 ## Projects 
