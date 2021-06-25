@@ -9,19 +9,19 @@
 
 void print_line(int n)
 {
-	int i = 0;
+	int i = 1;
 
-	if (n <= 0)
+	if (n >= 1)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		while (i < n)
+		while (i <= n)
 		{
 			_putchar(95);
 			i++;
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
+	else
+	{
+		_putchar('\n');
+	}
 }
