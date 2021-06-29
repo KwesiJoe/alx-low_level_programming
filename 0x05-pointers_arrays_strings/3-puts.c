@@ -9,12 +9,12 @@
 
 void _puts(char *str)
 {
-	int letter = 0;
+	int idx = 0;
 
-	while (*(str + letter) != '\0')
+	while (*(str + idx) != '\0')
 	{
-		_putchar(*(str + letter));
-		letter++;
+		_putchar(*(str + idx));
+		idx++;
 	}
 	_putchar('\n');
 }
