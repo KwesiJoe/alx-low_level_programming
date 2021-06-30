@@ -16,13 +16,13 @@ void puts_half(char *str)
 
 	run = size / 2;
 	idx = run;
-	
+
 	if (size % 2 != 0)
 	{
 		idx = run + 1;
 	}
 
-	while (idx <= size)
+	while (idx < size)
 	{
 		_putchar(*(str + idx));
 		idx++;
