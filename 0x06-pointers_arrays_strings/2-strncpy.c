@@ -1,15 +1,15 @@
 #include "holberton.h"
 
 /**
- * _strncat - concatenates a string and n bytes of another string.
- * @dest: start string.
- * @src: end string.
+ * _strncpy - copies a string.
+ * @dest: destination string.
+ * @src: source string.
  * @n: number of bytes of src to use.
  *
  * Return: pointer to resulting string dest
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int dest_idx = 0, src_idx = 0, i;
 
@@ -32,7 +32,7 @@ char *_strncat(char *dest, char *src, int n)
 
 	for (i = 0; i < n; i++)
 	{
-		*(dest + dest_idx + i) = *(src + i);
+		*(dest + i) = *(src + i);
 	}
 	return (dest);
 }
