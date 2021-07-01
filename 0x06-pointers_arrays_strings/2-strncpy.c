@@ -11,7 +11,7 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int dest_idx = 0, src_idx = 0, i;
+	int dest_idx = 0, src_idx = 0, i, src_size;
 
 	/*find length of dest string*/
 	while (*(dest + dest_idx) != '\0')
@@ -24,10 +24,11 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		src_idx++;
 	}
+	src_size = src_idx + 1;
 
-	if (n > src_idx)
+	if (n > src_size)
 	{
-		n = src_idx;
+		n = src_size;
 	}
 
 	for (i = 0; i < n; i++)
