@@ -11,29 +11,15 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int dest_idx = 0, src_idx = 0, i, src_size;
+	int idx = 0;
 
-	/*find length of dest string*/
-	while (*(dest + dest_idx) != '\0')
+	for (idx = 0; idx < n; idx++)
 	{
-		dest_idx++;
+		*(dest + idx) = *(src + idx);
 	}
-
-	/*find length of src string*/
-	while (*(src + src_idx) != '\0')
+	for ( ; idx < n; idx++)
 	{
-		src_idx++;
-	}
-	src_size = src_idx + 1;
-
-	if (n > src_size)
-	{
-		n = src_size;
-	}
-
-	for (i = 0; i < n; i++)
-	{
-		*(dest + i) = *(src + i);
+		dest[idx] = '\0';
 	}
 	return (dest);
 }
