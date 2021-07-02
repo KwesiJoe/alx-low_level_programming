@@ -13,7 +13,7 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int idx = 0;
 
-	for (idx = 0; idx < n; idx++)
+	for (idx = 0; idx < n && src[idx] != '\0'; idx++)
 	{
 		*(dest + idx) = *(src + idx);
 	}
