@@ -11,7 +11,7 @@ char *string_toupper(char *s)
 {
 	int idx = 0;
 
-	while (*(s + idx) != '\n')
+	while (*(s + idx) != '\0')
 	{
 		if (*(s + idx) >= 97 && *(s + idx) <= 122)
 		{
