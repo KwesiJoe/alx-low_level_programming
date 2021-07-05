@@ -4,6 +4,7 @@
  * cap_string - capitalizes all words of a string.
  * @s: input string
  *
+ * Return:  returns capitalized dtring
  */
 
 char *cap_string(char *s)
@@ -13,9 +14,9 @@ char *cap_string(char *s)
 	int seperators[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
 	if (*s >= 97 && *s <= 122)
-		{
-			*s = *s - 32;
-		}
+	{
+		*s = *s - 32;
+	}
 
 	while (*(s + idx) != '\0')
 	{
