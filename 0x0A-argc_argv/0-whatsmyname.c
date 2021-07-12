@@ -5,7 +5,7 @@
  * @argc: number of arguments
  * @argv: argument vector
  *
- * return: 0
+ * Return: 0
  */
 
 int main(__attribute__((unused)) int argc, char *argv[])
